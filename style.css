@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+body {
+
+    background-image: url('file:///Users/billycrabbe/Documents/Billy%20Crabbe%20Website/images/bg.jpeg');
+    background-position: center top;
+    background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+}
+
+hr { 
+    display: block;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#Name {
+    width:45%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#social_media {
+    margin-top: 2%;
+    text-align: right;
+    
+}
+
+#mc_embed_signup {
+    width: 43%;
+    margin-top: 2%;
+}
+
+.socialbutton {
+    color: white;
+}
+
+a.socialbutton:hover {
+    color: #A1A7CA;
+}
+
+#release_date {
+    margin-top: 10%;
+    float: left;
+    width:  80%;
+    display: block;
+}
+
+#CWM_Cover{
+    float: left;
+    width: 45%;
+    
+}
+
+#joinjourney {
+    margin-top: 10%;
+    float: right;
+    width: 61%;
+}
+
+#music_title {
+    text-align: right;
+    font-family: 'Bowlby One SC', cursive;
+    color: white;
+    font-size: 450%;
+}
+
+#shows_title {
+    text-align: left;
+    font-family: 'Bowlby One SC', cursive;
+    color: white;
+    font-size: 450%;
+}
+
+#album_covers {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Carousel CSS */
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+#carousel-video {
+	max-width: 100%;
+	width: 410px;
+	margin: 0 auto;
+    float: right;
+}
+.carousel-caption {
+	margin-bottom: 5%;
+	font-family: 'Rock Salt', cursive;
+}
+/*iframe {
+	z-index: ;
+}*/
+.carousel-control {
+	margin-bottom: 4%;
+}
+/* End Carousel */
+
+
+/* Album Display */
+body .blocks {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .blocks .block {
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 13px;
+  -webkit-transform: perspective(600px) rotateY(-30deg);
+          transform: perspective(600px) rotateY(-30deg);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+body .blocks .block img {
+  width: auto;
+  max-width: 100%;
+}
+body .blocks .block .overlay {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+body .blocks .block .overlay img {
+  width: auto;
+  max-width: 50%;
+}
+body .blocks .block.hover, body .blocks .block:hover {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+body .blocks .block.hover .overlay, body .blocks .block:hover .overlay {
+  opacity: 1;
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+/* End Album Display */
+
+
+/* For width 400px and larger: */
+@media only screen and (max-width: 770px) {
+    #Name { 
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    #social_media {
+        text-align: center;
+    }
+    
+    #mc_embed_signup {
+    width: 100%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+    #release_date {
+        margin-top: 10%;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right:auto;
+    }
+        
+    #joinjourney {
+        margin-top: 3%;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right:auto;
+}
+
+    #CWM_Cover{
+        width: 100%;
+        margin: 0 auto;
+}
+
+    #carousel-video {
+        width: 100%;
+        margin: 0 auto;
+}
+
+#music_title {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    color: white;
+    font-size: 450%;
+}
+
+#shows_title {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    color: white;
+    font-size: 450%;
+}
