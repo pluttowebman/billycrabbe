@@ -2,7 +2,7 @@
 
 body {
 
-    background-image: url('http://github.com/pluttowebman/billycrabbe/blob/master/images/bg.jpeg');
+    background-image: url('/billycrabbe/images/bg.jpeg');
     background-position: center top;
     background-repeat:  no-repeat;
 	background-attachment: fixed;
